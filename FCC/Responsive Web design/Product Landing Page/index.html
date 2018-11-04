@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bulma hugs</title>
+    <link rel="stylesheet" href="css/main.css">
+    
+    <link rel="stylesheet" href="css/my-style.css">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  </head>
+  
+  <body>
+  <header id="header">
+    
+    <!--navbar--> 
+    <nav id="nav-bar" class="nav navbar has-navbar-fixed-top is-danger ">
+      
+      <!--container-->
+      <div class="container">
+        <div class="nav-brand navbar-start">
+          <a class="nav-item">
+            <img id="header-img"src="http://bulma.io/images/bulma-logo.png" alt="Bulma logo" width="200px" height="30px">
+          </a>
+        </div>
+      
+        <!-- This "nav-toggle" hamburger menu is only visible on mobile -->
+        <!-- You need JavaScript to toggle the "is-active" class on "nav-menu" -->
+        <span class="navbar-burger burger" data-target="navMenu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      
+        <!-- This "nav-menu" is hidden on mobile -->
+        <!-- Add the modifier "is-active" to display it on mobile -->
+        <div id="navMenu" class="navbar-menu navMen navbar-end is-tab ">
+          <div class="navbar-end">
+            <div class="navbar-end-end">
+            <a class="nav-link nav-item nav-item-btn is-active button is-primary" href="#video">
+              Presentation
+            </a>
+            <a class="nav-link button is-primary nav-item nav-item-btn" href="#candy">
+              Candys
+            </a>
+            <a class="nav-link button is-primary nav-item nav-item-btn" href="#scam">
+              Get candy
+            </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--END container-->
+    </nav>
+    <!--END navbar-->
+  </header>
+  
+  
+    <!--heroAndVideo-->
+    <section class="hero is-medium is-primary">
+      <div class="hero-body">
+        <div class="container">
+          <div class="columns">
+            <div class="column is-12-desktop  has-text-centered">
+              <h1 class="title is-2 is-spaced has-text-black">
+                Bulma candy shop
+              </h1>
+              <h2 class="subtitle is-4 ">
+                  Welcome to <strong>Bulma</strong> 3 candy shop
+                  <br>
+                  Whole year <strong class="has-text-danger">SALE</strong>. 
+                  2% off of all 3 products 365 days a year. <br>
+                  Don't miss on this great opportunity!
+              </h2>
+              
+              <iframe id="video"  src="https://www.youtube.com/embed/f3yZnmSldt4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--END heroAndVideo-->
+    
+    <!--products-->
+    <section class="section">
+      <div class="container has-text-centered">
+            <div class="columns is-3 is-primary">
+              
+                <!--First column-->
+                <div class="column is-4 is-one-third is-narrow">
+                  <div id="candy" class="card card-b">
+                    <div class="card-image">
+                      <figure class="image is-3by3">
+                        <img src="img/lollipop.svg" placeholder=" picture of a lollipop" alt="Graphic of a lollipop">
+                      </figure>
+                    </div>
+                    
+                    <div class="card-content">
+                      <div class="media">
+                        <div class="media-content has-text-centered">
+                          <p class="title is-4">Lollipop</p>
+                          <p class="subtitle is-3">0,00036 &#8383;</p>
+                        </div>
+                      </div>
+                      <hr>
+                      <div class="content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                        <a href="#">#css</a> <a href="#">#responsive</a>
+                        <br>
+                        <footer class="card-footer">
+                          <a href="#" class="card-footer-item"><strong>-1</strong></a>
+                          <a href="#" class="card-footer-item"><strong >Buy</strong></a>
+                          <a href="#" class="card-footer-item"><strong>+1</strong></a>
+                        </footer>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--END First column-->
+                
+                <!--Second column-->
+                <div class="column  is-4 is-one-third is-narrow">
+                  <div class="card">
+                    <div class="card-image">
+                      <figure class="image is-3by3">
+                        <img src="img/christmas-candy.svg" placeholder=" picture of santa's sweet stick" alt="graphic of a santa's candy stick">
+                      </figure>
+                    </div>
+                    
+                    <div class="card-content">
+                      <div class="media">
+                        <div class="media-content has-text-centered">
+                          <p class="title is-4">Santa's stick</p>
+                          <p class="subtitle is-3">0,00072 &#8383;</p>
+                        </div>
+                      </div>
+                      <hr>
+                      <div class="content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                        <a href="#">#css</a> <a href="#">#responsive</a>
+                        <br>
+                        <footer class="card-footer">
+                          <a href="#" class="card-footer-item"><strong>-1</strong></a>
+                          <a href="#" class="card-footer-item"><strong >Buy</strong></a>
+                          <a href="#" class="card-footer-item"><strong>+1</strong></a>
+                        </footer>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--END Second column-->
+                
+                <!--Third column-->
+                <div class="column is-4 is-one-third is-narrow">
+                  <div class="card">
+                    <div class="card-image">
+                      <figure class="image is-3by3">
+                        <img src="img/sweets.svg" placeholder=" picture of a sweets" alt="graphic of a sweets">
+                      </figure>
+                    </div>
+                    
+                    <div class="card-content">
+                      <div class="media">
+                        <div class="media-content has-text-centered">
+                          <p class="title is-4">Sweets</p>
+                          <p class="subtitle is-3">0,00059 &#8383;</p>
+                        </div>
+                      </div>
+                      <hr>
+                      <div class="content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                        <a href="#">#css</a> <a href="#">#responsive</a>
+                        <br>
+                        <footer class="card-footer">
+                          <a href="#" class="card-footer-item"><strong>-1</strong></a>
+                          <a href="#" class="card-footer-item"><strong >Buy</strong></a>
+                          <a href="#" class="card-footer-item"><strong>+1</strong></a>
+                        </footer>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--END Third column-->
+                
+              </div>
+            </div>
+    </section>
+    <!--END products-->
+    
+    <!--form-->
+    <section class="container has-text-centered">
+      <div class="columns">
+        <div class="column is-6 is-offset-3">
+          <p id="scam" class="has-text-grey-light">Enter your email address in the field below so we know where to send our delicious candies. We are sending only via email since postman's are eating candies faster than they can deliver them.
+          </p>
+          <br>
+
+      <div class="field">
+        <label class="label">Email</label>
+        
+        <form id="form" action="https://www.freecodecamp.com/email-submit" method="GET" name="email">
+          <input class="input" id="email" name="email" type="email" placeholder="You give us your email we gave you candy." value="Email@..." required="">
+          <input id="submit" type="submit" value="submit" name="email">
+        </form>
+        </div>
+      </div>
+      </div>
+    </section>
+    <!--END form-->
+    
+    <!--footer-->
+    <footer class="footer has-text-centered">
+      <div class="container">
+         <div class="columns is-2 is-mobile">
+          
+          <div class="column is-6 ">
+            <p>
+              Learning <strong>Bulma</strong>, <br> while learning responsive web design <br> at <a href="https://www.freecodecamp.org/" target="_blank"><strong>FreeCodeCamp</strong></a>
+              <br>
+              <div id="git">
+                <a href="https://github.com/SimplePotato" target="_blank">
+                  <span class="icon">
+                      <i class="fab fa-github-square"></i>
+                  </span>
+                </a>
+              </div>
+            </p>
+          </div>
+          
+          <div class="column is-6 ">
+            <p>
+              <strong class="has-text-weight-semibold">
+                <a href="https://www.npmjs.com/package/bulma-start" target="_blank">bulma-start@0.0.1</a>
+              </strong>
+            </p>
+            <p>
+              <small>
+                Source code licensed <a href="http://opensource.org/licenses/mit-license.php">MIT</a>
+              </small>
+            </p>
+            <p style="margin-top: 1rem;">
+              <a href="http://bulma.io" target="_blank">
+                <img src="https://bulma.io/images/made-with-bulma.png" alt="Made with Bulma" width="128" height="24">
+              </a>
+            </p>
+            <p>
+              by maderer <a href="https://github.com/SimplePotato" target="_blank">@SimplePotato</a> 
+            </p>
+            
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--END footer-->
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>

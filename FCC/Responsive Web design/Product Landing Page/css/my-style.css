@@ -1,0 +1,60 @@
+
+nav{
+  position: fixed !important; top: 0; left: 0; right: 0; z-index: 1;
+}
+
+#submit{
+  font-size: 20px;
+  border:0;
+  background-color: #00d1b2;
+  border-radius: 15px;
+  margin-top:10px;
+  margin-bottom:10px;
+  padding:10px;
+}
+
+
+#git{
+  display:block;
+  position:relative;
+ 
+  font-size: 3rem;
+}
+
+
+@media screen and (max-width:1200px){
+  #video{
+  width:700px;
+  height:500px;
+}
+}
+
+@media screen and (max-width:1900px){
+  #video{
+  width:800px;
+  height:600px;
+}
+}
+
+@media screen and (max-width:720px){
+  #video{
+  width:500px;
+  height:300px;
+}
+
+.navbar-end-end{
+  /*The FCC curriculum says I need to add something flexbox, even if Bulma library is built on the top of the flexbox.*/
+  display:flex !important;
+  flex-direction: row-reverse !important;
+  justify-content: inherit !important;
+  align-items: center !important;
+  margin-top:-10px;
+}
+}
+
+@media screen and (max-width:540px){
+  #video{
+  width:280px;
+  height:180px;
+}
+}
