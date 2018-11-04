@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Survey form</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!--[if lt IE 9]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience. I highly recomend Firefox or Chrome</p>
+    <![endif]-->
+
+<!--main container-->
+<div class="main container">
+  <!--header-->
+  <header id="header">
+    <h1 id="title">Exsample survey form</h1>
+    <p id="description">Do you think crypto is dead?</p>
+  </header>
+  <!--END header-->
+  <hr>
+  <!--forms-->
+  <div class="survey">
+      <form id="survey-form" action="" method="GET">
+        
+        <fieldset id="personalInfo">
+          
+          <label id="name-label" for="name">Your name:</label> 
+          <input id="name"  type="text" name="name" placeholder="Satoshi Nakamoto" required>
+          
+          <br>
+          
+          <label id="email-label" for="email"> Your spam email:</label>
+          <input id="email" type="email" name="email" placeholder="email@someth.ing" required>
+          
+          <br>
+          
+          <label id="number-label" for="number">Months in crypto:</label>
+          <input id="number" type="number" placeholder="69" name="quantity" min="1" max="120" step="1" value="1">
+        </fieldset>
+        
+        <hr>
+        
+        <fieldset id="select">
+          <p>Select your favourite coin:</p>
+            <select id="dropdown" name="coins">
+                <option value="bitcoin">Bitcoin</option>
+                <option value="stellarLumens">Stellar Lumens</option>
+                <option id="LTC" value="litecoin">Litecoin</option>
+                <option value="Etherium">Etherium</option>
+              </select>
+        </fieldset>
+        
+        <hr>
+        
+        <fieldset id="radioBtn">
+            <p>please specify your gender:</p>
+            <div id="btns">
+                <input type="radio" name="gender" value="male" checked> Male<br>
+                <input type="radio" name="gender" value="female"> Female<br>
+                <input type="radio" name="gender" value="other"> Q
+            </div>
+        </fieldset>
+
+        <hr>
+        
+        <fieldset id="checkBoxes">
+            <div>
+              <p>What kind of crypto your bag contains?</p>
+            </div>
+            
+            <div id=CB>
+              <input type="checkbox" name="HMCC" value="HMCC">High market cap coins<br>
+              <input type="checkbox" name="LMCC" value="LMCC">Low market cap coins<br>
+              <input type="checkbox" name="SC" value="SC">Shit coins<br>
+              <input type="checkbox" name="noCoiner" value="noCoiner">I don't do crypto
+            </div>
+          </fieldset>
+
+        <hr>
+      <div class="msg">
+        <div>
+        <fieldset id="message">
+          <p id="sayIt">Anything to say?</p>
+          <textarea name="message" rows="6" cols="30" maxlength="160" placeholder="Please tell us something more but only in 160 characters..."></textarea>
+        </fieldset>
+      </div>
+      <div>
+      <button id="submit" type="submit" onclick="alert('Let me tell you something before you submit this survey. Crypto is not dead. It just went POP!')">Submit</button> 
+    </div>
+  </div>
+      </form>
+      <!--END forms-->
+  </div>
+  <!--END survey-->
+</div>
+<!--END main container-->
+  </body>
+</html>

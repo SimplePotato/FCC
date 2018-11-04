@@ -1,0 +1,148 @@
+.main{
+  background-color:#cbd0b9;
+  display:flex;
+  margin:40px;
+  flex-direction: column;
+  border:5px solid #514b23;
+  border-radius: 50px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#title, #description{
+  margin-top:30px;
+  line-height: 0.3rem;
+  font-size: 2.2rem;
+}
+
+#header{
+  background-color: #bddbd0;
+  border-radius: 50px 50px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  border-bottom: 3px solid #514b23; 
+}
+
+.survey{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+fieldset{
+  display: block;
+  margin-left: 20%;
+  margin-right: 20%;
+  text-align: left;
+  font-size: 1.2em;
+  border:0; /*by default fildsets have visual borders. set border to 0 to hide them*/
+}
+
+#personalInfo #name-label{
+padding-right:14%;
+}
+
+#number-label{
+  padding-right:0.8%;
+}
+
+input[type=number]{
+  width:50.0%;
+  text-align: center;
+}
+
+#select{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#select #dropdown{
+  font-weight: 100;
+  font-size: 20px;
+  height: 3rem;
+  margin-top:18px;
+  text-align: center
+}
+
+#radioBtn{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#checkBoxes{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.msg{
+  display: flex;
+  flex-direction: column;
+}
+
+#sayIt{
+  margin-left:20%;
+}
+
+textarea{
+  margin-left: -21%;
+  padding:20px;
+  border-radius: 50px;
+  font-size: 31px;
+}
+#submit{
+  border-radius: 50px;
+  height: 50px;
+  width: 200px;
+  margin-left:35%;
+  margin-bottom:13px;
+  position: relative;
+  
+}
+
+
+@media screen and (max-width: 900px) {
+  
+.main{
+  font-size:10px;
+  margin:-5px;
+}
+
+#title{
+  font-size:20px;
+}
+
+#description{
+  font-size: 17px;
+}
+  
+#personalInfo{
+    font-size: 13px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    line-height:17px;
+  }
+
+
+textarea {
+  margin-left:-64px;
+  width:250px;
+  font-size: 15px;
+  }
+  
+#submit{
+   margin-left:58px;
+  }
+
+}
+
+@media screen and (min-width: 900px) {
+  .container {
+    margin:40px 120px 40px 120px; 
+  }
+}
+  
